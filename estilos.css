@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoCondensedRegular";
+    src: url("RobotoCondensedRegular/RobotoCondensedRegular.eot");
+    src: url("fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff") format("woff"),
+    url("fonts/RobotoCondensedRegular/RobotoCondensedRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoCondensedLight"; */
+@font-face {
+    font-family: "RobotoCondensedLight";
+    src: url("fonts/RobotoCondensedLight/RobotoCondensedLight.eot");
+    src: url("fonts/RobotoCondensedLight/RobotoCondensedLight.eot?#iefix")format("embedded-opentype"),
+    url("fonts/RobotoCondensedLight/RobotoCondensedLight.woff") format("woff"),
+    url("fonts/RobotoCondensedLight/RobotoCondensedLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+/*My CSS Main*/
+body{
+	font-family: "RobotoRegular", Arial, sans-serif;
+	background-color: black;
+    background-image: url(LOGORED.png);
+    background-repeat: no-repeat;
+	color: #5b6161;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+header{
+	height: 250px;
+	top: -10px;
+	
+	background-repeat: no-repeat;
+	background-position: left;
+
+}
+
+h1, h2, h3, h6 {
+    letter-spacing: 0.0625em;
+	color: #b23c1c;
+}
+
+
+h6 a {
+	color: #b23c1c;
+    letter-spacing: 0.0625em;
+}
+
+hr {
+    
+    border: 1px dashed #5b6161;
+    border-style: none none dashed; 
+
+    /*Rest of stuff here*/
+}
+
+/* Menu */
+nav{
+	background-color: transparent;
+	margin: 0;
+	overflow: hidden;
+    font-weight: bold;
+        float: right;
+
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+
+}
+
+nav ul li a{
+	color: white;
+	display: block;
+	line-height: 3em;
+	padding: 5em 1em 1em 1em;
+	text-decoration: none;
+}
+
+nav ul li h2{
+    font-size: 2em;
+}
+
+
+
+nav ul li a:hover{
+	background-color: #c10818;
+        -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+} 
+
+/* End of Menu */
+
+
+/*Content*/
+main{
+	
+    width: 70%;
+    margin: auto;
+    
+}
+
+section{
+	
+	width: 100%;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+article, aside{
+    padding: 5px;
+
+}
+
+article{
+    width: 70%;    
+    float: left; 
+    overflow: hidden;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    overflow: hidden;
+}
+
+article h6{
+    color: #5b6161;
+}
+
+article a{
+    color: #b23c1c;
+    text-decoration: none;
+}
+
+article a:hover{
+    color: white;
+}
+
+
+aside{
+    width: 30%;
+    
+    padding: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    overflow: hidden;
+
+    
+}
+
+aside a{
+    color: #5b6161;
+    text-decoration: none;
+}
+
+aside a:hover{
+    color: white;
+}
+
+aside li{
+    list-style-type: none;
+}
+
+article ul{
+        line-height: 0.1em;
+}
+
+/*Galeria*/
+#galeria img{
+        width:250px;
+        height: 200px;
+        margin:2em;}
+
+#galeria div{
+        float:left;
+    }
+
+
+/*Contactos*/
+iframe {
+    width: 100%;
+    height: 270px;
+    border: 0px;
+    margin-top: 1em;
+}
+
+.contactos label {
+    width: 100%;
+}
+
+.contactos input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.contactos input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contactos input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+/*End of content*/
+
+/*Footer*/
+
+
+footer{
+    line-height: 1.7em;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+footer a{
+    text-decoration: none;
+    color: #5b6161;
+}
+
+footer a:hover{
+    color: white;
+}
+
+
+/* Form */
